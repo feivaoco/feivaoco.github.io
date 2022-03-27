@@ -1,74 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style type="text/css" media="screen">
-        * {
-          overflow: hidden;
-          font-family: "Helvetica Neue";
-          cursor: pointer;
-          text-selection: none;
-        }
-        
-        @-webkit-keyframes resize {
-            0% {
-                font-size: 0px;
-                color: black;
-            }
-            100% {
-                font-size: 100px;
-                color: red;
-            }
-        }
-      
-        span.heart {
-          position: absolute;
-          height: 200px;
-          width: 200px;
-          text-align: center;
-          color: red;
-          -webkit-animation-name: resize;
-          -webkit-animation-duration: 0.6s;
-          -webkit-animation-iteration-count: infinite;
-          -webkit-animation-direction: alternate;
-          -webkit-animation-timing-function: ease-in-out;
-        }
-      </style>
-      <script type="text/javascript" charset="utf-8">
-        // Heart class represents a beating heart. It is implemented using a span
-        // and a heart character. Coloring and resizing the span to create the 
-        // effect
-        var Heart = function(x, y) {
-          this.initalize(x, y);
-        };
-        Heart.prototype = {
-          initalize: function(x, y) {
-            // create an element
-            this.element = document.createElement("span");
-            this.element.className = "heart";
-            this.element.style.top = y + "px";
-            this.element.style.left = x + "px";
-            
-            // randomly different heart style
-            this.element.innerText = (Math.random() > 0.5) ? "\u2661" : "\u2665";
-          }
-        };
-        
-        window.onload = function() {
-          var screen = document.getElementById("screen");
-          
-          // register on click to create a new heart
-          document.onclick = function(event) {
-            var heart = new Heart(event.clientX, event.clientY);
-            screen.appendChild(heart.element);
-          };
-        };
-      </script>
-    </head>
-    <body id="screen">
-    </body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAMOR</title>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <h1>TEAMO MUCHOMIAMORRR</h1>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+
+</body>
 </html>
-
-
     <!--<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
