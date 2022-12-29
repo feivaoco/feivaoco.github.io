@@ -17,12 +17,38 @@
                 transform: scale(1.05);
                 
             }
+            /* body{
+                background: linear-gradient(90deg, rgba(2,68,218,1) 1%, 
+                                        rgba(37,114,218,0.7343137938769257) 25%, 
+                                        rgba(194,2,218,0.2777311608237045) 52%, 
+                                        rgba(85,239,170,0.44019614681810226) 79%, 
+                                        rgba(0,212,255,1) 100%);
+                
+            } */
+            .css-selector {
+                background: linear-gradient(120deg, #eca619, #5471ca, #daea58,#e47326 ,#9150d0, #5d1169, #a3a6dd);
+                background-size: 200% 200%;
+
+                -webkit-animation: AnimationName 15s ease infinite;
+                animation: AnimationName 15s ease infinite;
+            }
+
+            @-webkit-keyframes AnimationName {
+                0%{background-position:0% 58%}
+                50%{background-position:100% 43%}
+                100%{background-position:0% 58%}
+            }
+            @keyframes AnimationName {
+                0%{background-position:0% 58%}
+                50%{background-position:100% 43%}
+                100%{background-position:0% 58%}
+            }
         </style>
     </head>
-    <body>
+    <body class="css-selector">
         <!-- <h1>HOLAAA YA CASI EJEJEJJE</h1> -->
-        <div class="text-center bg-gradient">
-            <h2> Página principal para visitar las páginas de mis repositorios </h2>
+        <div class="text-center  container-fluid">
+            <h2 class="fw-bolder"> Página principal para visitar las páginas de mis proyectos </h2>
             <div class="row row-cols-3 " style="padding-left: 5%; padding-right: 5%;">
                 
                 
