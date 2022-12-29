@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feivaoco</title>
-    <link rel="icon" href="assets/helpyIcon.png">
-</head>
-<body>
-    HOLAAA YA CASI EJEJEJJE
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feivaoco</title>
+        <link rel="icon" href="assets/helpyIcon.png">
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" >
+        <style>
+            .card-proyecto{
+                cursor: pointer;
+                transition: all 0.1s;
+                
+            }
+            .card-proyecto:hover{
+                transform: scale(1.05);
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1>HOLAAA YA CASI EJEJEJJE</h1> -->
+        <div class="text-center bg-gradient">
+            <h2> Página principal para visitar las páginas de mis repositorios </h2>
+            <div class="row row-cols-3 " style="padding-left: 5%; padding-right: 5%;">
+                
+                
+                <div class="col">
+                    <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pr0')">
+                        <img src="assets/imgs/porta14.png" class="card-img-top " />
+                        <div class="card-body ">
+                            <h3 class="card-title">pr0</h3>
+                            <p class="card-text">
+                                Mi primer página que hice, nada más probé en colocar música y gifs. Está como que
+                                fea, jeje.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pr1')">
+                        <img src="assets/imgs/yoylanaomiteamomuchomiamor.png" class="card-img-top " />
+                        <div class="card-body ">
+                            <h3 class="card-title">pr1</h3>
+                            <p class="card-text">
+                                Página dedicada a mi novia, fue mi segunda página, y pues, andaba probando en poner emojis, jeje.
+                                Te amo mucho miamor, me haces muy feliz. El dibujo de arriba lo hizo ella, dibuja bien hermoso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pipico_puredata_0')">
+                        <img src="assets/imgs/puredataraspberry.png" class="card-img-top " />
+                        <div class="card-body">
+                            <h3 class="card-title">Pure Data controlado con la Pi Pico</h3>
+                            <p class="card-text">
+                                Es una documentación del proyecto que nombro como Pi Pico Synth Piano with Pure Data, o algo así.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script>
+            function goto(link){
+                window.open('http://'+link, '_blank');
+            }
+            
+        </script>
+    </body>
 </html>
