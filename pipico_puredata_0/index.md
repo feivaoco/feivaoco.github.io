@@ -37,7 +37,7 @@ Bueno, eso sería todo. Me gustó mucho realizar el proyecto ya quería usar un 
 Archivo:  [pipico_puredata_0.7z](pipico_puredata_0.7z) <br> Contiene dos imagenes del diagrama del circuito, una en png y otra svg para mayor calidad, también contiene el sketch del IDE de Arduino y el parche de Pure Data, el cómo utilizar este proyecto la verda no lo expliqué porque no lo tenía pensado, de todas formas dejo un contacto para que me manden un mensaje por Discord: _invu42069#6865.
  
 ## Enlaces
-Sin descripción para que vean cada uno de ellos y vean de que tratan.
+Sin descripción para que vean cada uno de ellos y vean de qué tratan.
 - [https://www.youtube.com/watch?v=WPj-clNbvfk](https://www.youtube.com/watch?v=WPj-clNbvfk)
 - [https://www.youtube.com/watch?v=eVW0FD9g_Sk](https://www.youtube.com/watch?v=eVW0FD9g_Sk)
 - [https://www.youtube.com/watch?v=1cCTdezDBxM&t](https://www.youtube.com/watch?v=1cCTdezDBxM&t)
