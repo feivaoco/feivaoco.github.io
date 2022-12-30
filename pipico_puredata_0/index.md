@@ -1,19 +1,17 @@
-# Pure Data Pi Pico
-## Bienvenido a mi primer proyecto involucrando a la Pi Pico y el programa Pure Data.
+ Pure Data Pi Pico <br>
+ Bienvenido a mi primer proyecto involucrando a la Pi Pico y el programa Pure Data.
 
-- [Pure Data Pi Pico](#pure-data-pi-pico)
-  - [Bienvenido a mi primer proyecto involucrando a la Pi Pico y el programa Pure Data.](#bienvenido-a-mi-primer-proyecto-involucrando-a-la-pi-pico-y-el-programa-pure-data)
-  - [Resumen](#resumen)
-  - [Introducción](#introducción)
-  - [Desarrollo](#desarrollo)
-    - [Diagrama del circuito](#diagrama-del-circuito)
-    - [Parche del Pure Data](#parche-del-pure-data)
-    - [Arduino IDE y la Pi Pico](#arduino-ide-y-la-pi-pico)
-    - [Circuito con la Pi Pico](#circuito-con-la-pi-pico)
-  - [Resultados](#resultados)
-  - [Conclusiones](#conclusiones)
-  - [Descargar proyecto](#descargar-proyecto)
-  - [Enlaces](#enlaces)
+- [Resumen](#resumen)
+- [Introducción](#introducción)
+- [Desarrollo](#desarrollo)
+  - [Diagrama del circuito](#diagrama-del-circuito)
+  - [Parche del Pure Data](#parche-del-pure-data)
+  - [Arduino IDE y la Pi Pico](#arduino-ide-y-la-pi-pico)
+  - [Circuito con la Pi Pico](#circuito-con-la-pi-pico)
+- [Resultados](#resultados)
+- [Conclusiones](#conclusiones)
+- [Descargar proyecto](#descargar-proyecto)
+- [Enlaces](#enlaces)
 
 ## Resumen
 Este proyecto es un piano sintetizador con el que los sonidos se generan a través del programa Pure Data y este es controlado con la Pi Pico.
