@@ -27,7 +27,7 @@ ground."; OOoo, creo que ya entendí hasta ahorita, jeje.
 Como ya vieron el diagrama del circuito no necesito ponerlo dos veces aquí, por lo que solamente pondré mi video utilizando el primer synth y ya construído como piano así bien pasado de lanza. Y tambíen pondré una captura de la espectacular interfaz del parche.
 ![interfaz del parche](/pipico_puredata_0/cap_interfaz.png)
 [Aquí el video del primer intento con la Pi Pico y Pure Data](https://www.youtube.com/watch?v=5JeAMMj4OdM&t) <br>
-[Y aquí el video del utilizando ya el producto de este proyecto](https://www.youtube.com/watch?v=BOR75bgEKAA)
+[Y aquí el video utilizando ya el producto de este proyecto](https://www.youtube.com/watch?v=BOR75bgEKAA)
 
 
 ## Conclusiones
