@@ -1,5 +1,5 @@
  Pure Data Pi Pico <br>
- Bienvenido a mi primer proyecto involucrando a la Pi Pico y el programa Pure Data.
+ Bienvenido a mi primer proyecto involucrando a la Pi Pico y el programa Pure Data.<br>
 
 - [Resumen](#resumen)
 - [Introducción](#introducción)
