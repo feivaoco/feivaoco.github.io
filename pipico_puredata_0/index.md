@@ -21,7 +21,7 @@ Pure Data es un programa con el Procesamiento de Señales Digitales, DSP, por lo
 
 ## Desarrollo
 
-### Diagrama del circuito
+### Diagrama del circuito 
 La verdad esto fue lo útlimo que se realizó pero para que se vea un algún resultado de una vez mejor la pongo aquí al principio, jeje.
 ![diagrama del circuito](/pipico_puredata_0/proyecto/diagrama_pipicopiano.png) El diagrama fue hecho en [draw.io](https://app.diagrams.net/ "Página de draw.io"), la verdad es que es un programa muy bueno e intuitivo para realizar esquemas y diagramas como éste, la primera vez que lo usé fue para hacer un diagrama de flujo.
 
