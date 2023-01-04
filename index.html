@@ -7,24 +7,31 @@
         <title>Feivaoco</title>
         <link rel="icon" href="assets/helpyIcon.png">
         <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" >
+        <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" >
         <style>
+            .card-proyect-footer{
+                    font-size: 22px;
+                    text-shadow: 0px 0px 8px rgb(63, 60, 149);
+                    
+            }
+
             .card-proyecto{
                 cursor: pointer;
                 transition: all 0.1s;
+                margin-top: 8%;
+                margin-bottom: 8%;
                 
             }
             .card-proyecto:hover{
                 transform: scale(1.05);
                 
             }
-            /* body{
-                background: linear-gradient(90deg, rgba(2,68,218,1) 1%, 
-                                        rgba(37,114,218,0.7343137938769257) 25%, 
-                                        rgba(194,2,218,0.2777311608237045) 52%, 
-                                        rgba(85,239,170,0.44019614681810226) 79%, 
-                                        rgba(0,212,255,1) 100%);
-                
-            } */
+
+
+
+            
+
+
             .css-selector {
                 background: linear-gradient(120deg, #eca619, #5471ca, #daea58,#e47326 ,#9150d0, #5d1169, #a3a6dd);
                 background-size: 200% 200%;
@@ -45,55 +52,93 @@
             }
         </style>
     </head>
-    <body class="css-selector">
+    <body class="css-selector" >
         <!-- <h1>HOLAAA YA CASI EJEJEJJE</h1> -->
-        <div class="text-center  container-fluid">
+
+        <div class="text-center  ">
             <h2 class="fw-bolder"> Página principal para visitar las páginas de mis proyectos </h2>
-            <div class="row row-cols-3 " style="padding-left: 5%; padding-right: 5%;">
-                
-                
-                <div class="col">
-                    <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pr0')">
+
+            
+
+            <div class="container">
+
+
+                <div class="row">
+
+
+                  <div class="col-sm-4">
+                    <div class="card  card-proyecto  " onclick="goto('feivaoco.github.io/pr0')">
                         <img src="assets/imgs/porta14.png" class="card-img-top " />
+                        <!-- <div class="badge badge-primary " style="position: absolute; top: 0; right: 0;"><i class="fa-solid fa-circle-exclamation"></i></div> -->
                         <div class="card-body ">
                             <h4 class="card-title">pr0</h4>
-                            <p class="card-text align-content-center">
+                            <p class="card-text ">
                                 Mi primer página que hice, nada más probé en colocar música y gifs. Está como que
                                 fea, jeje.
                             </p>
                         </div>
+                        <div class="card-footer">
+                            <p class="card-text font-monospace card-proyect-footer">
+                                Haz click en este recuadro para ir a la página del proyecto
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-
-
-                <div class="col">
+                  </div>
+                  
+                  
+                  <div class="col-sm-4">
                     <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pr1')">
                         <img src="assets/imgs/yoylanaomiteamomuchomiamor.png" class="card-img-top " />
                         <div class="card-body ">
                             <h4 class="card-title">pr1</h4>
-                            <p class="card-text align-content-center">
+                            <p class="card-text ">
                                 Página dedicada a mi novia, fue mi segunda página, y pues, andaba probando en poner emojis, jeje.
                                 Te amo mucho miamor, me haces muy feliz. El dibujo de arriba lo hizo ella, dibuja bien hermoso.
                             </p>
                         </div>
+                        <div class="card-footer">
+                            <p class="card-text font-monospace card-proyect-footer">
+                                Haz click en este recuadro para ir a la página del proyecto
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col">
+                  </div>
+
+
+                  <div class="col-sm-4">
                     <div class="card  card-proyecto " onclick="goto('feivaoco.github.io/pipico_puredata_0')">
                         <img src="assets/imgs/puredataraspberry.png" class="card-img-top " />
                         <div class="card-body">
                             <h4 class="card-title">Proyecto PDPP</h4>
-                            <p class="card-text align-content-center">
+                            <p class="card-text ">
                                 Es una documentación del proyecto que nombro como Pi Pico Synth Piano with Pure Data, o algo así.
                             </p>
                         </div>
+                        <div class="card-footer">
+                            <p class="card-text font-monospace card-proyect-footer">
+                                Haz click en este recuadro para ir a la página del proyecto
+                            </p>
+                        </div>
                     </div>
+                  </div>
+
+                  
+
                 </div>
 
+
+
+
             </div>
+              
+              
+
+
+
         </div>
+
+        
 
         <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
         <script>
