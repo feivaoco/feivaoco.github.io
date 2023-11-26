@@ -1,9 +1,0 @@
-[submodule "themes/m10c"]
-	path = themes/m10c
-	url = https://github.com/vaga/hugo-theme-m10c.git
-[submodule "themes/smigle"]
-	path = themes/smigle
-	url = https://gitlab.com/ian-s-mcb/smigle-hugo-theme.git
-[submodule "themes/devise"]
-	path = themes/devise
-	url = https://github.com/austingebauer/devise.git
