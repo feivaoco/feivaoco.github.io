@@ -1,50 +1,59 @@
-baseURL = "https://feivaoco.github.io/"
-title = "Feiv's Moon"
-languageCode = "en-us"
+baseURL = "https://example.com"
+title = "Your title"
 
-relativeURLs = true
-enableEmoji = true
-enableRobotsTXT = true
-copyright = "&copy; Copyright 2023, FeivMoon"
 
-[assets]
-    favicon = "/favicon.ico"
+paginate = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
 
 [params]
-    description = "Página blog para públicar mis proyectos con el seudónimo de FeivMoon. Feiv's Moon."      # Your meta description of the site
-    header_title = "Feiv's Moon"                 
-    header_subtitle = "Blog de FeivMoon" 
-    home_image = "/img/helpy.png" 
-    
-    favicon = true
-    recent_posts = 15                           
-    mainSections = ["posts", "post", "blog"]   
-    
-   
-        
-    [params.style]                             
-        backgroundColor = "#242930"
-        homeImageBorderColor = "#57cc8a"
-        fontFamilyBase = "Helvetica Neue"        
-        fontColor = "#57cc8a"
-        
+  author = "John Doe"
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/gohugoio"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/gohugoio"
 
-    [[params.social]]
-        fa_icon = "fab fa-itch-io fa-2x"
-        href = "https://feivvydiadev.itch.io"      
-    [[params.social]]
-        name = "Mi github"
-        fa_icon = "fab fa-github fa-2x"          
-        href = "https://github.com/feivaoco"
-    [[params.social]]
-        fa_icon = "fab fa-spotify fa-2x"
-        href = "https://open.spotify.com/intl-es/artist/10yCFAEVhf5zWitCCcPAPf"
-    [[params.social]]
-        fa_icon = "fab fa-soundcloud fa-2x"
-        href = "https://soundcloud.com/user-322543212"
-    [[params.social]]
-        fa_icon = "fab fa-twitter fa-2x"
-        href = "https://twitter.com/Feivaco69"
-    
+  # Default theme
+  #[params.style]
+  #  darkestColor = "#242930"
+  #  darkColor = "#353b43"
+  #  lightColor = "#afbac4"
+  #  lightestColor = "#ffffff"
+  #  primaryColor = "#57cc8a"
 
-        
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+  #  primaryColor = "#dad865"
+
+  # Red theme
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  lightColor = "#d6d6d6"
+  #  lightestColor = "#d3d3d3"
+  #  primaryColor = "#ffffff"
