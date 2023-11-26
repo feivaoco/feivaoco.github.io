@@ -1,0 +1,13 @@
+<footer class="text-center pb-1">
+    <small class="text-muted">
+        {{ if .Site.Copyright }}
+            {{ .Site.Copyright | safeHTML }}
+        {{ else }}
+            {{ "&copy; Copyright Year, Your Name" | safeHTML }}
+        {{ end }}
+        <br>
+        Página generada con <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        y el tema <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+        | Contacto: <a href = "mailto: feivmoon.projects@gmail.com">feivmoon.projects@gmail.com</a>
+    </small>
+</footer>

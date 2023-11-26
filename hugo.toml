@@ -8,7 +8,7 @@ enableRobotsTXT = true
 copyright = "&copy; Copyright 2023, FeivMoon"
 
 [assets]
-    favicon = "favicon.ico"
+    favicon = "/favicon.ico"
 
 [params]
     description = "Página blog para públicar mis proyectos con el seudónimo de FeivMoon. Feiv's Moon."      # Your meta description of the site
@@ -18,15 +18,17 @@ copyright = "&copy; Copyright 2023, FeivMoon"
     
     favicon = true
     recent_posts = 15                           
-    mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+    mainSections = ["posts", "post", "blog"]   
     
    
         
-    [params.style]                             # CSS style overrides
-        backgroundColor = "#f8f9fa"
-        homeImageBorderColor = "#ffffff"
-        fontFamilyBase = "Helvetica Neue"        # First-choice font
-        fontColor = "#212529"
+    [params.style]                             
+        backgroundColor = "#242930"
+        homeImageBorderColor = "#57cc8a"
+        fontFamilyBase = "Helvetica Neue"        
+        fontColor = "#57cc8a"
+        
+
     [[params.social]]
         fa_icon = "fab fa-itch-io fa-2x"
         href = "https://feivvydiadev.itch.io"      
