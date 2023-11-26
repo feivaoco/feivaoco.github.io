@@ -4,3 +4,24 @@ title = "Feiv's Moon"
 theme = "m10c"
 
 
+
+
+
+
+[menu]
+[[menu.main]]
+    name = 'inicio'
+    pageRef = '/'
+    weight = 10
+[[menu.main]]
+    name = 'tags'
+    pageRef = '/tags'
+    weight = 20
+
+
+
+[params]
+[[params.social]]
+  icon = "github"
+  name = "My Github"
+  url = "https://github.com/feivaoco"
