@@ -1,7 +1,7 @@
 baseURL = "https://feivaoco.github.io/"
 title = "Feiv's Moon"
 languageCode = "en-us"
-theme = "devise"
+
 relativeURLs = true
 enableEmoji = true
 enableRobotsTXT = true
