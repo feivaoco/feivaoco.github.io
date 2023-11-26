@@ -10,7 +10,9 @@
             {{ .PublishDate.Format "Jan 2, 2006" }}
             <span class="posts-list-item-separator">-</span>
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-            {{ .ReadingTime }} min read
+            Lectura de {{ .ReadingTime }}{{if le .ReadingTime 1 }} minuto {{ else }} minutos {{ end }}
+            
+              
           </span>
         </li>
       {{ end }}
