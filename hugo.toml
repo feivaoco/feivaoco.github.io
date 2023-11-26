@@ -13,15 +13,25 @@ theme = "m10c"
     name = 'Inicio'
     pageRef = '/'
     weight = 10
-[[menu.main]]
-    name = 'Tags'
-    pageRef = '/tags/'
-    weight = 20
 
 
 
 [params]
+author = "FeivMoon"
+description = "Blog en el que público mis proyectos"
+avatar="https://feivaoco.github.io/assets/imgs/helpy.png"
+menu_item_separator = "|"
+favicon="https://feivaoco.github.io/assets/imgs/helpyIcon.png"
+
+
 [[params.social]]
   icon = "github"
-  name = "My Github"
+  name = "Mi github"
   url = "https://github.com/feivaoco"
+
+
+[[params.social]]
+  icon = "twitter"
+  name = "Mi twitter"
+  url = "https://twitter.com/Feivaco69"
+
