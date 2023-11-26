@@ -10,12 +10,12 @@ theme = "m10c"
 
 [menu]
 [[menu.main]]
-    name = 'inicio'
+    name = 'Inicio'
     pageRef = '/'
     weight = 10
 [[menu.main]]
-    name = 'tags'
-    pageRef = '/tags'
+    name = 'Tags'
+    pageRef = '/tags/'
     weight = 20
 
 
