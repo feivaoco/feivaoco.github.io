@@ -1,13 +1,13 @@
-baseURL = "https://example.com"
-title = "Your title"
+baseURL = "https://feivaoco.github.io/"
+title = "Feiv's Moon"
 
 
-paginate = 8
+paginate = 15
 
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Home"
+    name = "Inicio"
     url = "/"
     weight = 1
   [[menu.main]]
@@ -17,23 +17,47 @@ paginate = 8
     weight = 2
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "Sobre mí"
     url = "/about/"
     weight = 3
 
 [params]
-  author = "John Doe"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  menu_item_separator = " - "
+  author = "FeivMoon"
+  avatar = "helpy.png"
+  description = "Blog para publicar mis proyectos"
+  menu_item_separator = " | "
+  [[params.social]]
+    icon = "link"
+    name = "itchio"
+    url = "https://feivvydiadev.itch.io/"
   [[params.social]]
     icon = "github"
-    name = "Github"
-    url = "https://github.com/gohugoio"
+    name = "github"
+    url = "https://github.com/feivaoco"
+  [[params.social]]
+    icon = "music"
+    name = "bandcamp"
+    url = "https://feivmoon.bandcamp.com"
+  [[params.social]]
+    icon = "music"
+    name = "spotify"
+    url = "https://open.spotify.com/intl-es/artist/10yCFAEVhf5zWitCCcPAPf"    
+  [[params.social]]
+    icon = "music"
+    name = "soundcloud"
+    url = "https://soundcloud.com/user-322543212"
+  [[params.social]]
+    icon = "youtube"
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UC3beyJaNq77kjC3sGFk52dQ"
   [[params.social]]
     icon = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/gohugoio"
+    name = "twitter"
+    url = "https://twitter.com/Feivaco69"
 
+  
+
+  
   # Default theme
   #[params.style]
   #  darkestColor = "#242930"
