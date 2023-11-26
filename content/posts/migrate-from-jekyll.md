@@ -6,18 +6,7 @@ date = "2014-03-10"
 
 ## Move static content to `static`
 Jekyll has a rule that any directory not starting with `_` will be copied as-is to the `_site` output. Hugo keeps all static content under `static`. You should therefore move it all there.
-With Jekyll, something that looked like
 
-    ▾ <root>/
-        ▾ images/
-            logo.png
-
-should become
-
-    ▾ <root>/
-        ▾ static/
-            ▾ images/
-                logo.png
 
 Additionally, you'll want any files that should reside at the root (such as `CNAME`) to be moved to `static`.
 
@@ -48,86 +37,6 @@ As a single reference data point, converting my templates for [heyitsalex.net](h
 
 ## Convert Jekyll plugins to Hugo shortcodes
 Jekyll has [plugins](http://jekyllrb.com/docs/plugins/); Hugo has [shortcodes](/doc/shortcodes/). It's fairly trivial to do a port.
-
-### Implementation
-As an example, I was using a custom [`image_tag`](https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb) plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.
-
-Jekyll's plugin:
-
-    module Jekyll
-      class ImageTag < Liquid::Tag
-        @url = nil
-        @caption = nil
-        @class = nil
-        @link = nil
-        // Patterns
-        IMAGE_URL_WITH_CLASS_AND_CAPTION =
-        IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"(\s+)->((https?:\/\/|\/)(\S+))(\s*)/i
-        IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
-        IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
-        IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
-        def initialize(tag_name, markup, tokens)
-          super
-          if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
-            @class   = $1
-            @url     = $3
-            @caption = $7
-            @link = $9
-          elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
-            @class   = $1
-            @url     = $3
-            @caption = $7
-          elsif markup =~ IMAGE_URL_WITH_CAPTION
-            @url     = $1
-            @caption = $5
-          elsif markup =~ IMAGE_URL_WITH_CLASS
-            @class = $1
-            @url   = $3
-          elsif markup =~ IMAGE_URL
-            @url = $1
-          end
-        end
-        def render(context)
-          if @class
-            source = "<figure class='#{@class}'>"
-          else
-            source = "<figure>"
-          end
-          if @link
-            source += "<a href=\"#{@link}\">"
-          end
-          source += "<img src=\"#{@url}\">"
-          if @link
-            source += "</a>"
-          end
-          source += "<figcaption>#{@caption}</figcaption>" if @caption
-          source += "</figure>"
-          source
-        end
-      end
-    end
-    Liquid::Template.register_tag('image', Jekyll::ImageTag)
-
-is written as this Hugo shortcode:
-
-    <!-- image -->
-    <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
-        {{ with .Get "link"}}<a href="{{.}}">{{ end }}
-            <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
-        {{ if .Get "link"}}</a>{{ end }}
-        {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
-        <figcaption>{{ if isset .Params "title" }}
-            {{ .Get "title" }}{{ end }}
-            {{ if or (.Get "caption") (.Get "attr")}}<p>
-            {{ .Get "caption" }}
-            {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
-                {{ .Get "attr" }}
-            {{ if .Get "attrlink"}}</a> {{ end }}
-            </p> {{ end }}
-        </figcaption>
-        {{ end }}
-    </figure>
-    <!-- image -->
 
 ### Usage
 I simply changed:
