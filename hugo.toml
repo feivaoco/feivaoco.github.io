@@ -2,34 +2,21 @@ baseURL = 'https://feivaoco.github.io/'
 languageCode = 'en-us'
 title = "Feiv's Moon"
 theme = "m10c"
-
-
-
-
-
-
 [menu]
 [[menu.main]]
     name = 'Inicio'
     pageRef = '/'
     weight = 10
-
-
-
 [params]
 author = "FeivMoon"
 description = "Blog en el que público mis proyectos"
 avatar="https://feivaoco.github.io/assets/imgs/helpy.png"
 menu_item_separator = "|"
 favicon="https://feivaoco.github.io/assets/imgs/helpyIcon.png"
-
-
 [[params.social]]
   icon = "github"
   name = "Mi github"
   url = "https://github.com/feivaoco"
-
-
 [[params.social]]
   icon = "twitter"
   name = "Mi twitter"
