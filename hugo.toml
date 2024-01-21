@@ -27,6 +27,10 @@ paginate = 15
   description = "Blog para publicar mis proyectos"
   menu_item_separator = " | "
   [[params.social]]
+    icon = "mail"
+    name = "contact"
+    url = "mailto:feivmoon.projects@gmail.com"
+  [[params.social]]
     icon = "link"
     name = "itchio"
     url = "https://feivvydiadev.itch.io/"
